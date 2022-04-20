@@ -1,0 +1,352 @@
+/* Common style */
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #989898;
+}
+
+h1 {font-size: 30px; font-weight: bold;}
+h2 {font-size: 24px;}
+h3 {font-size: 22px;}
+h4 {font-size: 20px;}
+h5 {font-size: 18px;}
+h1, h2, h3, h4, h5 {color: #4f4f4f;}
+
+.vanishondesktop {
+    display: none;
+}
+
+/* Header style */
+header {
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+
+.colmaracademy {
+    color: #bda9a9;
+}
+
+.colmaracademy span {
+    color: #033042;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+    height: 32px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.desktop {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 24px;            
+}
+
+.desktop > a {
+    padding-left:16px;             
+    text-decoration: none;
+    color:#4f4f4f;
+}
+
+/* Section1 style */
+.section1 {
+    display: flex;
+    padding: 32px 24px;
+    background-color: lightgrey;
+}
+
+.section1 img {
+    width: 60%;
+    height: auto;
+}
+
+.section1-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 24px;
+}
+
+.section1-content h4 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.section1-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 32px;
+    background-color:#4f4f4f;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+/* Section2 style */
+.section2 {
+    display: flex;
+    padding: 32px 24px;
+    justify-content: space-between;
+}
+
+.section2-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.section2-content h2 {
+    margin-top: 32px;
+}
+
+.section2-content p {
+    margin: 24px 0px;
+}
+
+/* Used for section2 and section4 sidebar */
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+/* Used for section2 and section4 sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+}
+
+/* Used for section2 and section4 sidebar */
+.sidebar:hover {
+    background-color:lightgrey;
+}
+
+/* Used for section2 and section4 sidebar */
+.sidebar-desktop {
+    display: flex;
+    width: 35%;
+    height: auto;
+}
+
+/* Used for section2 and section4 sidebar */
+.sidebar-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding-left: 16px;
+}
+
+/* Only for section2 sidebar */
+.sidebar-text p {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+/* Section3 style */
+.section3 {
+    display: flex;
+    padding: 32px 72px;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+.section3-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 32px;
+    margin-top: 32px;
+}
+
+.imgcard {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: white;
+}
+
+.imgcard img {
+    width: 100%;
+    height: auto;
+}
+
+.imgcard-text {
+    padding: 16px;
+}
+
+.imgcard-text p {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.imgcard-text h4 {
+    margin-bottom: 8px;
+}
+
+/* Section4 style */
+.section4 {
+    display: flex;
+    padding: 32px 24px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section4 h2 {
+    margin-bottom: 32px;
+}
+
+.section4-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section4-main {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.section4-main video {
+    width: 100%;
+    height: auto;
+}
+
+.section4-main h3 {
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+
+/* Used common style for section2 & section4 sidebar (refer on top) */
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border: 1px solid lightgrey;
+}
+
+footer div {
+    display: flex;
+}
+
+footer div p{
+    margin-left: 24px;
+}
+
+@media only screen and (max-width:720px)
+{
+    .vanishonmobile {
+        display: none;
+    }
+
+    /* Header style (mobile) */
+
+    .mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Section1 style (mobile) */
+    .section1 {
+        flex-direction: column;
+        padding: 0px 0px 32px 0px;
+    }
+
+    .section1 img {
+        width: 100%;
+    }
+
+    .section1-content {
+        align-items: center;
+        margin-top: 16px;
+        text-align: center;
+    }
+
+    /* Section2 style (mobile) */
+    .section2 {
+        padding: 32px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .sidebar-mobile {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .sidebar {
+        flex-direction: column;
+        padding: 0px;
+        margin-bottom: 32px;
+    }
+
+    /* Section3 style (mobile) */
+    .section3 {
+        background-color: white;
+    }
+
+    .section3-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        row-gap: 16px;
+        margin-top: 16px;
+    }
+
+    .imgcard {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgrey;
+        width: 100%;
+    }
+
+    .imgcard-text {
+        padding: 16px 0px;
+    }
+
+    .imgcard-text h4 {
+        margin: 0px;
+    }
+
+    /* Section4 style (mobile) */
+    .section4 {
+        padding: 32px 0px;
+    }
+
+    .section4-main {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 16px;
+    }
+}
